@@ -4,13 +4,11 @@ import simpy
 import numpy as np
 import matplotlib as plt
 
-st.title("Digital Twins para Atención Hospitalaria")
-
 # Configuración inicial para Streamlit
 st.title("Simulación del Sistema de Entrega de Medicamentos en un Hospital")
 
 # Entrada de parámetros desde la interfaz
-RANDOM_SEED = st.sidebar.number_input("Semilla Aleatoria (RANDOM_SEED)", value=42, step=1)
+RANDOM_SEED = st.sidebar.number_input("Semilla Aleatoria (RANDOM_SEED)", value=182, step=1)
 NUM_CAMAS = st.sidebar.number_input("Número de Camas (NUM_CAMAS)", value=100, step=1)
 OCUPACION_INICIAL = st.sidebar.number_input("Ocupación Inicial (OCUPACION_INICIAL)", value=90, step=1)
 HORAS_SIMULACION = st.sidebar.number_input("Horas de Simulación (HORAS_SIMULACION)", value=12, step=1)
@@ -18,7 +16,7 @@ INTERVALO_ALTAS = st.sidebar.slider("Intervalo de Altas Médicas (INTERVALO_ALTA
 TIEMPO_SOLICITUD_RECEPCION = st.sidebar.slider("Tiempo de Solicitud y Recepción (TIEMPO_SOLICITUD_RECEPCION)", 0, 60, (10, 25))
 TIEMPO_PREPARACION = st.sidebar.slider("Tiempo de Preparación (TIEMPO_PREPARACION)", 0, 60, (20, 30))
 TIEMPO_RECOJO = st.sidebar.slider("Tiempo de Recojo (TIEMPO_RECOJO)", 0, 120, (30, 60))
-NUM_SIMULACIONES = st.sidebar.number_input("Número de Simulaciones (NUM_SIMULACIONES)", value=10000, step=1)
+NUM_SIMULACIONES = st.sidebar.number_input("Número de Simulaciones (NUM_SIMULACIONES)", value=100, step=1)
 
 # Simulación con SimPy
 def paciente(env, tiempos1, tiempos2, tiempos3, farmacia):

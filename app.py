@@ -69,7 +69,7 @@ if st.button("Ejecutar Simulación"):
     st.write(f"Tiempo 3 Promedio: {np.mean(tiempos3_totales):.2f} minutos")
 
     # Visualización
-    st.subheader("Distribución de los Tiempos Pre-Intervención")
+    st.subheader("Distribución de los Tiempos Post-Intervención")
     import matplotlib.pyplot as plt
     fig, axes = plt.subplots(1, 3, figsize=(18, 6), sharey=True)
 

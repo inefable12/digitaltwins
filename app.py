@@ -2,6 +2,7 @@ import streamlit as st
 import random
 import simpy
 import numpy as np
+import matplotlib as plt
 
 st.title("Digital Twins para Atención Hospitalaria")
 

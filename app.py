@@ -1,16 +1,9 @@
 import streamlit as st
-import simpy
 import random
+import simpy
 import numpy as np
 
 st.title("Digital Twins para Atención Hospitalaria")
-st.
-
-
-import streamlit as st
-import random
-import simpy
-import numpy as np
 
 # Configuración inicial para Streamlit
 st.title("Simulación del Sistema de Entrega de Medicamentos en un Hospital")

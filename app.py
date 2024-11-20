@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib as plt
 
 # Configuración inicial para Streamlit
-st.title("Simulación del Sistema de Entrega de Medicamentos en un Hospital")
+st.title("Simulación de la Cadena de Distribución de Medicamentos")
 
 # Entrada de parámetros desde la interfaz
 RANDOM_SEED = st.sidebar.number_input("Semilla Aleatoria (RANDOM_SEED)", value=182, step=1)
@@ -69,7 +69,7 @@ if st.button("Ejecutar Simulación"):
     st.write(f"Tiempo 3 Promedio: {np.mean(tiempos3_totales):.2f} minutos")
 
     # Visualización
-    st.subheader("Distribución de los Tiempos")
+    st.subheader("Distribución de los Tiempos Pre-Intervención")
     import matplotlib.pyplot as plt
     fig, axes = plt.subplots(1, 3, figsize=(18, 6), sharey=True)
 
